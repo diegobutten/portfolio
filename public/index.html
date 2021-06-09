@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+
+        <title>My Portfolio</title>
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                font-family: 'Nunito', sans-serif;
+            }
+        </style>
+    </head>
+    <body class="antialiased">
+        <div class="bg-computer-img h-full bg-cover bg-no-repeat">
+            <header class="bg-black bg-opacity-75 sticky top-0 z-10 shadow-md">
+                <div class="" id="navbar">
+                    <div class="flex items-center container mx-auto">
+                        <div class="px-8">
+                            <h1 class="text-white text-xl list">Darrel Naz</h1>
+                        </div>
+                        <div id="ul" class="text-white uppercase text-sm font-bold tracking-wide">
+                            <ul class="flex">
+                                <li class="p-8">
+                                    <a href="#" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent list">Home</a>
+                                </li>
+                                <li class="p-8">
+                                    <a href="#skills" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent list">Skills</a>
+                                </li>
+                                <li class="p-8">
+                                    <a href="#projects" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent list">Project</a>
+                                </li>
+                                <li class="p-8">
+                                    <a href="#about" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent list">About</a>
+                                </li>
+                                <li class="p-8">
+                                    <a href="#contact" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent list">Contact</a>
+                                </li>
+                            </ul>
+                        </div>    
+                    </div>
+                </div>
+            </header>
+
+            <section class="bg-black bg-opacity-75">
+                <div class="flex items-center justify-around container mx-auto py-20">
+                    <div>
+                        <h1 class="text-6xl font-bold text-blue-500">Darrel Naz</h1>
+                        <span class="text-white italic">But you can call me 
+                            <span class="font-bold">
+                                Da, Darl or Naz
+                            </span>
+                        </span>
+                        <p class="text-white text-sm mt-5 mb-12">
+                            I'm a self-taught web developer, graduated from Forbes College
+                            and still learning new things.
+                        </p>
+                        <a href="#" class="py-3 px-4 rounded bg-yellow-500 uppercase text-xs text-white font-bold hover:bg-yellow-600">About me</a>
+                    </div>
+                    <div class="h-96 w-96">
+                        <img src="image/laptop.png" class="object-cover animate-bounce">
+                    </div>
+                </div>
+            </section>
+
+            <main class="bg-white py-8">
+                <section class="mt-8 py-8" id="skills">
+                    <div class="container mx-auto">
+                        <div>
+                            <h1 class="border-l-4 border-blue-600 text-2xl text-gray-900 font-mono uppercase px-2">
+                                Skills
+                            </h1>
+                        </div>
+                        <div class="mt-4 space-y-4">
+                            <div class="rounded overflow-hidden shadow-md border">
+                                <div class="p-4 bg-gradient-to-r from-blue-600 to-black">
+                                    <h2 class="text-sm uppercase text-white font-bold tracking-wider">Average Knowledge</h2>
+                                </div>
+                                <div class="bg-white grid grid-cols-9 gap-4 p-4">
+                                    <img alt="html" src="image/html5.png" class="h-32 w-32 object-cover">
+                                    <img alt="css3" src="image/css.png" class="h-32 w-32 object-cover">
+                                    <img alt="javascript" src="image/javascript.png" class="h-32 w-32 object-cover">
+                                    <img alt="bootstrap" src="image/bootstrap.png" class="h-32 w-32 object-contain">
+                                    <img alt="tailwind" src="image/tailwind.png" class="h-32 w-32 object-contain">
+                                    <img alt="tailwind" src="image/jquery.png" class="h-32 w-32 object-cover">
+                                    <img alt="php" src="image/php.svg.png" class="h-32 w-32 object-contain">
+                                    <img alt="laravel" src="image/laravel.svg.webp" class="h-32 w-32 object-contain">
+                                    <img alt="mysql" src="image/mysql.png" class="h-32 w-32 object-contain">
+                                </div>
+                            </div>
+                            <div class="rounded overflow-hidden shadow-md border">
+                                <div class="p-4 bg-gradient-to-r from-blue-600 to-black">
+                                    <h2 class="text-sm uppercase text-white font-bold tracking-wider">Basic Knowledge</h2>
+                                </div>
+                                <div class="bg-white grid grid-cols-9 gap-4 p-4">
+                                    <img alt="python" src="image/python.png" class="h-32 w-32 object-cover">
+                                    <img alt="react" src="image/react.svg.png" class="h-32 w-32 object-cover">
+                                    <img alt="vue" src="image/vue.png" class="h-32 w-32 object-contain">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-8 py-8" id="projects">
+                    <div class="container mx-auto">
+                        <div>
+                            <h1 class="border-l-4 border-blue-600 text-2xl text-gray-900 font-mono uppercase px-2">
+                                Projects
+                            </h1>
+                        </div>
+                        <div class="mt-4">
+                            <div class="grid grid-cols-4 gap-4">
+                                <div class="rounded-lg border overflow-hidden shadow">
+                                    <img alt="html" src="image/html5.png" class="w-full h-32 object-cover bg-black">
+                                    <div class="p-6 bg-blue-100">
+                                        <h3 class="text-xl text-blue-900 font-black">
+                                            Calendar
+                                        </h3>
+                                        <span class="text-gray-500 text-sm">
+                                            A simple calendar page
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="mt-8" id="about">
+                    <div class="container mx-auto">
+                        <div>
+                            <h1 class="border-l-4 border-blue-600 text-2xl text-gray-900 font-mono uppercase px-2">
+                                About me
+                            </h1>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <section id="contact">
+                        
+                </section>
+            </footer>
+        </div>
+    </body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/welcome.js"></script>
+</html>
