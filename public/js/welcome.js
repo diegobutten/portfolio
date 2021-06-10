@@ -5,9 +5,9 @@ $(window).scroll(function(){
 
 	if($(this).scrollTop() > nav.height()){
 		nav.addClass('bg-white')
-		list.removeClass('text-white').addClass('text-blue-500')
+		list.removeClass('text-white').addClass('text-gray-700')
 	} else {
 		nav.removeClass('bg-white')
-		list.addClass('text-white').removeClass('text-blue-500')
+		list.addClass('text-white').removeClass('text-gray-700')
 	}
 })
