@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   // purge: [],
   purge: {
@@ -7,8 +9,15 @@ module.exports = {
   theme: {
     extend: {
     	backgroundImage: theme => ({
-         'computer-img': "url('image/computer.jpg')",
-        })
+        'computer-img': "url('image/computer.jpg')",
+      }),
+      colors : {
+        orange: colors.orange,
+        teal: colors.teal,
+        cyan: colors.cyan,
+      },
+      scale: ['hover'],
+      translate: ['hover'],
     },
   },
   variants: {
