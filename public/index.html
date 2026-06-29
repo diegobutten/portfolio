@@ -20,25 +20,32 @@
         <div class="bg-computer-img h-full bg-cover bg-no-repeat">
             <header class="bg-black bg-opacity-75 sticky top-0 z-10 shadow-md">
                 <div class="" id="navbar">
-                    <div class="flex items-center container mx-auto">
+                    <div class="flex flex-col md:flex-row items-center justify-between container mx-auto px-4">
+                    <!-- <div class="flex items-center container mx-auto"> -->
                         <div class="px-8">
                             <h1 class="text-white text-xl list">Darrel Naz</h1>
                         </div>
                         <div id="ul" class="uppercase text-sm font-bold tracking-wide">
-                            <ul class="flex">
-                                <li class="p-8">
+                            <ul class="flex flex-wrap justify-center"></ul>
+                            <!-- <ul class="flex"> -->
+                                <li class="p-3 md:p-8">
+                                <!-- <li class="p-8"> -->
                                     <a href="#" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent text-white list">Home</a>
                                 </li>
-                                <li class="p-8">
+                                <li class="p-3 md:p-8">
+                                <!-- <li class="p-8"> -->
                                     <a href="#skills" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent text-white list">Skills</a>
                                 </li>
-                                <li class="p-8">
+                                <li class="p-3 md:p-8">
+                                <!-- <li class="p-8"> -->
                                     <a href="#projects" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent text-white list">Project</a>
                                 </li>
-                                <li class="p-8">
+                                <li class="p-3 md:p-8">
+                                <!-- <li class="p-8"> -->
                                     <a href="#about" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent text-white list">About</a>
                                 </li>
-                                <li class="p-8">
+                                <li class="p-3 md:p-8">
+                                <!-- <li class="p-8"> -->
                                     <a href="#contact" class="hover:border-blue-500 p-2 hover:text-blue-500 border-b-4 border-transparent text-white list">Contact</a>
                                 </li>
                             </ul>
@@ -48,9 +55,13 @@
             </header>
 
             <section class="bg-black bg-opacity-75">
-                <div class="flex items-center justify-around container mx-auto py-20">
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-around container mx-auto py-10 px-4 gap-8">
+                <!-- <div class="flex items-center justify-around container mx-auto py-20"> -->
                     <div>
-                        <h1 class="text-6xl font-bold text-blue-500">Darrel Naz</h1>
+                        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-500">
+                        <!-- <h1 class="text-6xl font-bold text-blue-500"> -->
+                            Darrel Naz
+                        </h1>
                         <span class="text-white italic">But you can call me 
                             <span class="font-bold">
                                 Da, Darl or Naz
@@ -62,7 +73,8 @@
                         </p>
                         <a href="#" class="py-3 px-4 rounded bg-yellow-500 uppercase text-xs text-white font-bold hover:bg-yellow-600">About me</a>
                     </div>
-                    <div class="h-96 w-96">
+                    <div class="w-48 h-48 sm:w-72 sm:h-72 md:w-96 md:h-96">
+                    <!-- <div class="h-96 w-96"> -->
                         <img src="image/laptop.png" class="object-cover animate-bounce">
                     </div>
                 </div>
@@ -97,8 +109,9 @@
                             </div>
                         </div>
                         <div class="mt-8 p-20">
-                            <div class="grid grid-cols-6 gap-4 p-4">
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-orange-300 relative">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 gap-4 p-4">
+                            <!-- <div class="grid grid-cols-6 gap-4 p-4"> -->
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-orange-300 relative">
                                     <div class="self-center">
                                         <img alt="css3" src="image/html5.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -108,7 +121,7 @@
                                         <span class="text-lg uppercase font-bold text-orange-300">html</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-blue-300 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-blue-300 relative">
                                     <div class="self-center">
                                         <img alt="css3" src="image/css.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -118,7 +131,7 @@
                                         <span class="text-lg uppercase font-bold text-blue-300">css</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-yellow-300 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-yellow-300 relative">
                                     <div class="self-center">
                                         <img alt="javascript" src="image/javascript.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -128,7 +141,7 @@
                                         <span class="text-lg uppercase font-bold text-yellow-300">Javascript</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-purple-300 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-purple-300 relative">
                                     <div class="self-center">
                                         <img alt="bootstrap" src="image/bootstrap.png" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -138,7 +151,7 @@
                                         <span class="text-lg uppercase font-bold text-purple-300">Bootstrap</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-blue-200 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-blue-200 relative">
                                     <div class="self-center">
                                         <img alt="tailwind" src="image/tailwind.png" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -148,7 +161,7 @@
                                         <span class="text-lg uppercase font-bold text-blue-200">Tailwind</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-blue-400 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-blue-400 relative">
                                     <div class="self-center">
                                         <img alt="jquery" src="image/jquery.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -158,7 +171,7 @@
                                         <span class="text-lg uppercase font-bold text-blue-400">Jquery</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-indigo-300 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-indigo-300 relative">
                                     <div class="self-center">
                                         <img alt="php" src="image/php.svg.png" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -168,7 +181,7 @@
                                         <span class="text-lg uppercase font-bold text-indigo-300">Php</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-red-300 relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-red-300 relative">
                                     <div class="self-center">
                                         <img alt="laravel" src="image/laravel.svg.webp" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -178,7 +191,7 @@
                                         <span class="text-lg uppercase font-bold text-red-300">Laravel</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-white relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-white relative">
                                     <div class="self-center">
                                         <img alt="mysql" src="image/mysql.png" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-green-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -188,7 +201,7 @@
                                         <span class="text-lg uppercase font-bold text-teal-300">MySql</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-white relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-white relative">
                                     <div class="self-center">
                                         <img alt="vue" src="image/vue.png" class="h-32 w-32 object-contain">
                                         <div class="border-skill-level ring-2 ring-white border-yellow-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -198,7 +211,7 @@
                                         <span class="text-lg uppercase font-bold text-green-300">Vue JS</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-white relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-white relative">
                                     <div class="self-center">
                                         <img alt="react" src="image/react.svg.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-yellow-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -208,7 +221,7 @@
                                         <span class="text-lg uppercase font-bold text-cyan-300">React JS</span>
                                     </div>
                                 </div>
-                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform hover:scale-125 language bg-white relative">
+                                <div class="ring-1 ring-black ring-opacity-10 shadow rounded-lg overflow-hidden flex flex-col transform md:hover:scale-110 language bg-white relative">
                                     <div class="self-center">
                                         <img alt="python" src="image/python.png" class="h-32 w-32 object-cover">
                                         <div class="border-skill-level ring-2 ring-white border-yellow-500 absolute -top-8 -left-8 rounded transform rotate-45">
@@ -225,24 +238,24 @@
                 <section class="py-8 bg-pink-600" id="projects">
                     <div class="container mx-auto relative isolate">
                         <div class="absolute top-4 left-5 z-0">
-                            <h1 class="text-5xl uppercase text-pink-400 font-black" id="header-text">Projects</h1>
+                            <h1 class="text-2xl md:text-4xl uppercase text-pink-400 font-black" id="header-text">Projects</h1>
                         </div>
                         <div class="relative z-10">
                             <h1 class="border-l-4 border-pink-400 text-2xl text-black text-opacity-50 font-mono uppercase px-2" id="sub-header-text">
                                 Projects
                             </h1>
                         </div>
-                        <div class="absolute text-white right-0 top-2/4 rounded-full bg-black bg-opacity-50 cursor-pointer hover:bg-opacity-75 bg arrow-next">
+                        <div class="hidden md:block absolute text-white right-0 top-2/4 rounded-full bg-black bg-opacity-50 cursor-pointer hover:bg-opacity-75 bg arrow-next">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                             </svg>
                         </div>
-                        <div class="absolute text-white left-0 top-2/4 rounded-full bg-black bg-opacity-50 cursor-pointer hover:bg-opacity-75 bg arrow-prev">
+                        <div class="hidden md:block absolute text-white left-0 top-2/4 rounded-full bg-black bg-opacity-50 cursor-pointer hover:bg-opacity-75 bg arrow-prev">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                             </svg>
                         </div>
-                        <div class="mt-8 grid grid-cols-2 gap-10 p-20 project-list justify-center" id="0-project-list">
+                        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 md:px-10 lg:px-20 gap-10 p-20 project-list justify-center" id="0-project-list">
                             <div class="text-pink-100 md:col-span-2 lg:col-span-1 lg:text-left md:text-center">
                                 <div>
                                     <h1 class="text-4xl font-semibold uppercase font-mono">
@@ -277,7 +290,7 @@
                                 <img alt="calendar" src="image/psd-calendar.png" class="w-full">
                             </div>    
                         </div>
-                        <div class="mt-8 grid grid-cols-2 gap-10 p-20 project-list hidden" id="1-project-list">
+                        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 md:px-10 lg:px-20 gap-10 p-20 project-list hidden" id="1-project-list">
                             <div class="text-pink-100 md:col-span-2 lg:col-span-1 lg:text-left md:text-center">
                                 <div>
                                     <h1 class="text-4xl font-semibold uppercase font-mono">
@@ -313,7 +326,7 @@
                                 <img alt="html" src="image/psd-youtube.png" class="w-full">
                             </div>    
                         </div>
-                        <div class="mt-8 grid grid-cols-2 gap-10 p-20 project-list hidden" id="2-project-list">
+                        <div class="mt-8 grid grid-cols-1 lg:grid-cols-2 gap-10 px-4 md:px-10 lg:px-20 gap-10 p-20 project-list hidden" id="2-project-list">
                             <div class="text-pink-100 md:col-span-2 lg:col-span-1 lg:text-left md:text-center">
                                 <div>
                                     <h1 class="text-4xl font-semibold uppercase font-mono">
@@ -357,10 +370,12 @@
                                 About me
                             </h1>
                         </div> -->
-                        <div class="mt-8 p-20">
-                            <div class="grid grid-cols-2 gap-2 max-w-4xl mx-auto ring-1 ring-black ring-opacity-5 p-2 rounded-lg bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow">
+                        <div class="mt-8 px-4 md:px-10 lg:px-20">
+                        <!-- <div class="mt-8 p-20"> -->
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 max-w-4xl mx-auto ring-1 ring-black ring-opacity-5 p-2 rounded-lg bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 shadow">
                                 <div class="">
-                                    <img src="image/profile.jpg" class="object-cover">
+                                    <img src="image/profile.jpg" class="w-full h-auto object-cover">
+                                    <!-- <img src="image/profile.jpg" class="object-cover"> -->
                                 </div>
                                 <div class="p-8 bg-white">
                                     <div>
@@ -372,12 +387,14 @@
                                     <div class="mt-12 text-sm text-gray-700 font-serif">
                                         <div>
                                             <p>
-                                                As a recent graduate from Forbes College at Pigcale Legazpi City. I am excited to begin my career in the field of web development. I enjoy taking complex problems and turning them into simple interface design. I'm passionate to continue developing my skills and learn new ideas.
+                                                <!-- As a recent graduate from Forbes College at Pigcale Legazpi City. I am excited to begin my career in the field of web development. I enjoy taking complex problems and turning them into simple interface design. I'm passionate to continue developing my skills and learn new ideas. -->
+                                                 Since graduating from Forbes College in Legazpi City back in 2020, I have been passionately diving into the world of web development. I have hands-on experience building functional, dynamic websites and specialized web applications, focusing on turning complex backend logic into clean, intuitive interface designs.
                                             </p>
                                         </div>
                                         <div class="mt-4">
                                             <p>
-                                                Thank you for taking time to visit my website. Have a great day!
+                                                I am always eager to challenge myself, learn new technologies, and continuously refine my skills. Thank you for taking the time to visit my website. Have a great day!
+                                                <!-- Thank you for taking time to visit my website. Have a great day! -->
                                             </p>
                                         </div>
                                     </div>
