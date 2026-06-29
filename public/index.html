@@ -416,9 +416,13 @@
     </body>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/welcome.js"></script>
+    <script>
         const btn = document.getElementById('menu-btn');
         const menu = document.getElementById('menu');
 
+        console.log(btn);
+        console.log(menu);
+        
         btn.addEventListener('click', () => {
             menu.classList.toggle('hidden');
         });
