@@ -13,8 +13,10 @@ chatToggle.addEventListener("click", () => {
 });
 
 closeChat.addEventListener("click", () => {
-    chatWindow.classList.add("hidden");
-    chatWindow.classList.remove("flex");
+    // chatWindow.classList.add("hidden");
+    // chatWindow.classList.remove("flex");
+    chatWindow.classList.toggle("hidden");
+    chatWindow.classList.toggle("flex");
 });
 
 function addMessage(text, sender) {
