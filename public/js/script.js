@@ -46,8 +46,13 @@ function addMessage(text, sender) {
     chatBox.scrollTop = chatBox.scrollHeight;
 }
 
+const API_URL =
+    window.location.hostname === "localhost"
+        ? "http://localhost:3000"
+        : "https://portfolio-obrq.onrender.com";
+
 async function getAIResponse(message) {
-    const response = await fetch("http://localhost:3000/chat", {
+    const response = await fetch(`${API_URL}/chat`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
