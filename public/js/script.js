@@ -13,8 +13,6 @@ chatToggle.addEventListener("click", () => {
 });
 
 closeChat.addEventListener("click", () => {
-    // chatWindow.classList.add("hidden");
-    // chatWindow.classList.remove("flex");
     chatWindow.classList.toggle("hidden");
     chatWindow.classList.toggle("flex");
 });
@@ -29,10 +27,6 @@ function addMessage(text, sender) {
 
     const bubble = document.createElement("div");
 
-    // bubble.className =
-    //     sender === "user"
-    //         ? "bg-black text-white px-4 py-3 rounded-2xl max-w-[80%]"
-    //         : "bg-gray-200 text-black px-4 py-3 rounded-2xl max-w-[80%]";
 
     bubble.className =
     sender === "user"
