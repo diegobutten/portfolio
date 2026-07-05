@@ -1,0 +1,36 @@
+{
+  "name": "Darrel Naz",
+  "role": "Aspiring Frontend Developer",
+  "skills": [
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "JavaScript",
+    "Responsive Web Design",
+    "Bootstrap",
+    "JQuery",
+    "PHP",
+    "Laravel",
+    "MySql",
+    "Vue JS",
+    "React JS",
+    "Python",
+    "Blitz JS",
+    "Node JS"
+  ],
+  "tools": [
+    "Git",
+    "GitHub",
+    "VS Code"
+  ],
+  "projects": [
+    "Portfolio Website",
+    "AI Chatbot using GROQ"
+  ],
+  "ex-gf": [
+    "Angela",
+    "Ailen",
+    "Rona",
+    "Joan"
+  ]
+}

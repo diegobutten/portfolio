@@ -1,0 +1,69 @@
+/* Custom, hand-written CSS only — Tailwind itself is now loaded via CDN (see index.html),
+   so this file replaces the old 4.7MB compiled Tailwind v2 stylesheet. Keeping this file
+   small is part of the "fast loading" goal: the browser now fetches Tailwind's utilities
+   on demand from a CDN edge cache instead of downloading megabytes of unused CSS. */
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Skip link: visually hidden until focused, for keyboard users */
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    background: #1d4ed8;
+    color: white;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+    border-radius: 0 0 0.5rem 0;
+}
+.skip-link:focus {
+    left: 0;
+}
+
+/* Skill card corner marker (replaces the old 30px diagonal ribbon hack) */
+.border-skill-level {
+    width: 14px;
+    height: 14px;
+    border-width: 3px;
+}
+
+/* Consistent, visible focus states everywhere (accessibility) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Selection color */
+::selection {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Slim, modern scrollbar for the chat box */
+#chat-box::-webkit-scrollbar {
+    width: 6px;
+}
+#chat-box::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.4);
+    border-radius: 999px;
+}
+#chat-box::-webkit-scrollbar-track {
+    background: transparent;
+}
