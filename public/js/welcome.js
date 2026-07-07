@@ -1,4 +1,4 @@
-const colors = ['pink', 'green', 'purple']
+const colors = ['pink', 'green', 'purple', 'orange']
 let index = 0
 
 $(window).scroll(function(){
@@ -37,10 +37,10 @@ $(document).on('click', '.arrow-next, .arrow-prev', function(){
 		index++
 	}
 
-	if(index > 2){
+	if(index > 3){
 		index = 0
 	} else if(index < 0){
-		index = 2
+		index = 3
 	}
 
 	$('#projects').removeClass(`bg-${colors[list_index]}-600`)
