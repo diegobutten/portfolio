@@ -1,16 +1,6 @@
 const colors = ['pink', 'green', 'purple', 'orange', 'cyan', 'red']
 let index = 0
 
-$(window).scroll(function () {
-  const nav = $('#navbar')
-
-  if ($(this).scrollTop() > nav.height()) {
-    nav.parent().removeClass('bg-opacity-75').addClass('bg-opacity-90')
-  } else {
-    nav.parent().removeClass('bg-opacity-90').addClass('bg-opacity-75')
-  }
-})
-
 let startX = 0
 let endX = 0
 
@@ -75,13 +65,4 @@ document.querySelectorAll('.arrow-next, .arrow-prev').forEach((btn) => {
 
 setInterval(() => {
   document.querySelector('.arrow-next')?.click()
-}, 10000)
-
-$(document).on({
-  mouseenter() {
-    $(this).addClass('z-10')
-  },
-  mouseleave() {
-    $(this).removeClass('z-10')
-  },
-}, '.language')
+}, 30000)

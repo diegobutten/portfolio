@@ -1,3 +1,22 @@
+// $(window).scroll(function () {
+//   const nav = $('#navbar')
+
+//   if ($(this).scrollTop() > nav.height()) {
+//     nav.parent().removeClass('bg-opacity-75').addClass('bg-opacity-90')
+//   } else {
+//     nav.parent().removeClass('bg-opacity-90').addClass('bg-opacity-75')
+//   }
+// })
+
+// $(document).on({
+//   mouseenter() {
+//     $(this).addClass('z-10')
+//   },
+//   mouseleave() {
+//     $(this).removeClass('z-10')
+//   },
+// }, '.language')
+
 const colors = ['pink', 'green', 'purple', 'orange', 'cyan', "red"]
 let index = 0
 
